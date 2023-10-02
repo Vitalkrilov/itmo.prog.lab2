@@ -1,6 +1,9 @@
 package vitalkrilov.itmo.prog.lab2.attacks;
 
-import ru.ifmo.se.pokemon.*;
+import ru.ifmo.se.pokemon.Pokemon;
+import ru.ifmo.se.pokemon.Status;
+import ru.ifmo.se.pokemon.StatusMove;
+import ru.ifmo.se.pokemon.Type;
 import vitalkrilov.itmo.prog.lab2.CliTextFormatter;
 
 public class SleepTalk extends StatusMove {

@@ -1,0 +1,141 @@
+@startuml
+class vitalkrilov.itmo.prog.lab2.attacks.HealBell {
+# String describe()
+# void applySelfEffects(Pokemon)
+# boolean checkAccuracy(Pokemon,Pokemon)
+# double calcCriticalHit(Pokemon,Pokemon)
+}
+class vitalkrilov.itmo.prog.lab2.pokemon.Dunsparce {
+}
+class vitalkrilov.itmo.prog.lab2.ImagesStorage {
++ {static} String getImage(Image)
+}
+enum vitalkrilov.itmo.prog.lab2.Image {
++  Blissey
++  Combusken
++  Dunsparce
++  Forretress
++  Gligar
++  Tangrowth
++  Gandalf
++  Outstanding
++  OutstandingColored
++  OutstandingGlitched
++  Shrek
++  Explanations
+}
+class vitalkrilov.itmo.prog.lab2.attacks.ShadowPunch {
+# String describe()
+# boolean checkAccuracy(Pokemon,Pokemon)
+# double calcCriticalHit(Pokemon,Pokemon)
+}
+class vitalkrilov.itmo.prog.lab2.pokemon.Tangrowth {
+}
+class vitalkrilov.itmo.prog.lab2.attacks.Thunderbolt {
+# String describe()
+# void applyOppEffects(Pokemon)
+# double calcCriticalHit(Pokemon,Pokemon)
+}
+class vitalkrilov.itmo.prog.lab2.attacks.ThunderWave {
+# String describe()
+# double calcCriticalHit(Pokemon,Pokemon)
+}
+class vitalkrilov.itmo.prog.lab2.attacks.CrossChop {
+# String describe()
+# double calcCriticalHit(Pokemon,Pokemon)
+}
+class vitalkrilov.itmo.prog.lab2.attacks.Attack {
++ {static} double calcCriticalHit(Pokemon,Pokemon)
++ {static} double calcCriticalHit(Pokemon,Pokemon,int)
+}
+class vitalkrilov.itmo.prog.lab2.pokemon.Forretress {
+}
+class vitalkrilov.itmo.prog.lab2.attacks.Endeavor {
+# Pokemon hookedAttacker
+# String describe()
+# double calcTypeEffect(Pokemon,Pokemon)
+# void applyOppDamage(Pokemon,double)
+# double calcCriticalHit(Pokemon,Pokemon)
+}
+class vitalkrilov.itmo.prog.lab2.NameBuilder {
+- {static} Random r
++ {static} String[] male_names
++ {static} String[] female_names
++ {static} String generateMaleName()
++ {static} String generateFemaleName()
++ {static} String generateName()
+}
+class vitalkrilov.itmo.prog.lab2.App {
++ {static} void main(String[])
+}
+class vitalkrilov.itmo.prog.lab2.attacks.HydroPump {
+# String describe()
+# double calcCriticalHit(Pokemon,Pokemon)
+}
+class vitalkrilov.itmo.prog.lab2.attacks.ThunderShock {
+# String describe()
+# void applyOppEffects(Pokemon)
+# double calcCriticalHit(Pokemon,Pokemon)
+}
+class vitalkrilov.itmo.prog.lab2.attacks.SleepTalk {
+# String describe()
+# boolean checkAccuracy(Pokemon,Pokemon)
+# void applySelfEffects(Pokemon)
+# double calcCriticalHit(Pokemon,Pokemon)
+}
+class vitalkrilov.itmo.prog.lab2.attacks.RapidSpin {
+# String describe()
+# void applySelfEffects(Pokemon)
+# double calcCriticalHit(Pokemon,Pokemon)
+}
+class vitalkrilov.itmo.prog.lab2.pokemon.Blissey {
+}
+class vitalkrilov.itmo.prog.lab2.CliTextFormatter {
++ {static} String colorify(String,Color)
+}
+enum vitalkrilov.itmo.prog.lab2.Color {
++  Black
++  Red
++  Green
++  Yellow
++  Blue
++  Magenta
++  Cyan
++  White
++  BrightBlack
++  BrightRed
++  BrightGreen
++  BrightYellow
++  BrightBlue
++  BrightMagenta
++  BrightCyan
++  BrightWhite
+}
+class vitalkrilov.itmo.prog.lab2.pokemon.Combusken {
+}
+class vitalkrilov.itmo.prog.lab2.attacks.Rage {
+# String describe()
+# double calcCriticalHit(Pokemon,Pokemon)
+}
+class vitalkrilov.itmo.prog.lab2.pokemon.Gligar {
+}
+
+
+ru.ifmo.se.pokemon.StatusMove <|-- vitalkrilov.itmo.prog.lab2.attacks.HealBell
+ru.ifmo.se.pokemon.Pokemon <|-- vitalkrilov.itmo.prog.lab2.pokemon.Dunsparce
+ru.ifmo.se.pokemon.PhysicalMove <|-- vitalkrilov.itmo.prog.lab2.attacks.ShadowPunch
+ru.ifmo.se.pokemon.Pokemon <|-- vitalkrilov.itmo.prog.lab2.pokemon.Tangrowth
+ru.ifmo.se.pokemon.SpecialMove <|-- vitalkrilov.itmo.prog.lab2.attacks.Thunderbolt
+ru.ifmo.se.pokemon.StatusMove <|-- vitalkrilov.itmo.prog.lab2.attacks.ThunderWave
+ru.ifmo.se.pokemon.PhysicalMove <|-- vitalkrilov.itmo.prog.lab2.attacks.CrossChop
+ru.ifmo.se.pokemon.Pokemon <|-- vitalkrilov.itmo.prog.lab2.pokemon.Forretress
+ru.ifmo.se.pokemon.PhysicalMove <|-- vitalkrilov.itmo.prog.lab2.attacks.Endeavor
+ru.ifmo.se.pokemon.SpecialMove <|-- vitalkrilov.itmo.prog.lab2.attacks.HydroPump
+ru.ifmo.se.pokemon.SpecialMove <|-- vitalkrilov.itmo.prog.lab2.attacks.ThunderShock
+ru.ifmo.se.pokemon.StatusMove <|-- vitalkrilov.itmo.prog.lab2.attacks.SleepTalk
+ru.ifmo.se.pokemon.PhysicalMove <|-- vitalkrilov.itmo.prog.lab2.attacks.RapidSpin
+ru.ifmo.se.pokemon.Pokemon <|-- vitalkrilov.itmo.prog.lab2.pokemon.Blissey
+ru.ifmo.se.pokemon.Pokemon <|-- vitalkrilov.itmo.prog.lab2.pokemon.Combusken
+ru.ifmo.se.pokemon.PhysicalMove <|-- vitalkrilov.itmo.prog.lab2.attacks.Rage
+ru.ifmo.se.pokemon.Pokemon <|-- vitalkrilov.itmo.prog.lab2.pokemon.Gligar
+@enduml

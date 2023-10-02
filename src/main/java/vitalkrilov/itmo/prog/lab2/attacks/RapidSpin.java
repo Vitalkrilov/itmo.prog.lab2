@@ -1,6 +1,9 @@
 package vitalkrilov.itmo.prog.lab2.attacks;
 
-import ru.ifmo.se.pokemon.*;
+import ru.ifmo.se.pokemon.PhysicalMove;
+import ru.ifmo.se.pokemon.Pokemon;
+import ru.ifmo.se.pokemon.Stat;
+import ru.ifmo.se.pokemon.Type;
 import vitalkrilov.itmo.prog.lab2.CliTextFormatter;
 
 public class RapidSpin extends PhysicalMove {
